@@ -27,4 +27,7 @@ urlpatterns = [
     # path("api/", include(router.urls)),
     path("", views.index, name="home"),
     path("<str:short_url>/", views.redirect, name="redirect"),
+    path(
+        "create_short_link/", views.create_short_link, name="create_short_link"
+    ),  # URL endpoint
 ]
