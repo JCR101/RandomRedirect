@@ -20,9 +20,11 @@ from rest_framework import routers
 from randomredirect import views
 
 router = routers.DefaultRouter()
-router.register(r"randomredirects", views.RedirectLinkView, "randomredirect")
+# router.register(r"randomredirects", views.RedirectLinkView, "randomredirect")
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("api/", include(router.urls)),
+    # path("admin/", admin.site.urls),
+    # path("api/", include(router.urls)),
+    path("", views.index, name="home"),
+    path("<str:short_url>/", views.redirect, name="redirect"),
 ]
