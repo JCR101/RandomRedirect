@@ -31,3 +31,9 @@ urlpatterns = [
         "create_short_link/", views.create_short_link, name="create_short_link"
     ),  # URL endpoint
 ]
+
+# list of potential urls for speedtest website:
+# https://fast.com/
+# https://www.speedtest.net/
+# https://testmy.net/
+# https://speedof.me/
