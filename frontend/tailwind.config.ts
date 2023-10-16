@@ -12,6 +12,14 @@ const config: Config = {
       'background': '#352D39',
       'background-dark': '#2B252E',
       'background-light': '#4D4452'
+    },
+    extend: {
+      boxShadow: {
+        'hard': '10px 10px 0px 0px rgba(0, 0, 0, 0.25)'
+      },
+      rounded: {
+        'tlbr': '1.25rem 0rem'
+      }
     }
   },
   plugins: [],
